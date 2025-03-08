@@ -1,0 +1,4 @@
+	Criar um sistema de cadastro para cadastrar novos e antigos livros, que também podem ser editado caso houver alguma mudança ou se tiver algum erro.
+	Criar um sistema de busca com um banco de dados onde será armazenado todos os livros presentes na biblioteca com o nome e a quantidade disponível. (exemplo: você pode buscar por nome ou por código do livro)
+	Criar um sistema de empréstimo para quando alguém for pegar temporariamente um livro mostrar a data de devolução e diminuir 1 livro no banco de dados. (exemplo: após fazer o empréstimo do livro a pessoa tem até XX/XX/2025 para devolver)
+	Criar um sistema de aviso/mensagem para o bibliotecário receber para responder o professor se há livros disponíveis ou se há alguma outra turma naquele momento.  
