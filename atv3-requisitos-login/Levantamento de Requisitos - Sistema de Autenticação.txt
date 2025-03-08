@@ -1,0 +1,18 @@
+Requisitos Funcionais: 
+	- Login do usuário por e-mail e senha.
+	- Recuperação de senha será pelo e-mail, o usuário escolhera a opção de "Esqueci a senha" e que o sistema enviara um e-mail para o usuário para redefinir a senha.
+	- Cadastro de novos usuários com e-mail, senha, nome, número de telefone, endereço.
+	- O usuário ter acesso as páginas disponíveis ao seu uso devido.
+	- O usuário conseguir sair da conta naquele dispositivo.
+
+Requisitos Não Funcionais:
+	- Sistema deve ter interface amigável e fácil de se usar.
+	- Sistema deve aguentar e processar mais de 100 logins e uso do sistema simultaneamente.
+	- Sistema deve ser seguro com criptografia de dados sensíveis.
+	- Sistema deve ser acessível para dispositivos móveis
+
+Regras de Negócio:
+	- Os usuário novos, não terem acesso as "cadastro de novos usuários" ou de dados sensíveis que podem afetar.
+	- Não ter acesso a mais informações antes de efetuar o login do site.
+	- Os chefes terem acesso a todos as informações que tem.
+	- Funcionário de setores diferentes ou de alta patente terão acesso a informações de paginas diferentes que outros funcionários de setores e patentes inferiores não tem.  
