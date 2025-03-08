@@ -1,0 +1,351 @@
+1 - Crie uma pasta chamada "projeto_inicial" na área de trabalho e, dentro dela, crie as seguintes subpastas:
+--- html
+--- css
+--- js
+--- assets
+
+md projeto_inicial
+
+projeto_inicial
+'projeto_inicial' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+cd projeto_inicial
+
+projeto_inicial>md html
+
+projeto_inicial>md css
+
+projeto_inicial>md js
+
+projeto_inicial>md assets
+
+projeto_inicial>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial
+
+08/02/2025  10:33    <DIR>          .
+08/02/2025  10:32    <DIR>          ..
+08/02/2025  10:33    <DIR>          assets
+08/02/2025  10:33    <DIR>          css
+08/02/2025  10:33    <DIR>          html
+08/02/2025  10:33    <DIR>          js
+               0 arquivo(s)              0 bytes
+               6 pasta(s)   517.258.014.720 bytes disponíveis
+
+2 - Navegue para a pasta "html", "css", "js", "assets" e verifique se o caminho atual está correto 
+(dica: utilize o comando para mostrar o diretório atual).
+
+projeto_inicial\html>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\html
+
+08/02/2025  10:33    <DIR>          .
+08/02/2025  10:33    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   517.256.196.096 bytes disponíveis
+
+projeto_inicial\html>cd ..
+
+projeto_inicial>cd css
+
+projeto_inicial\css>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\css
+
+08/02/2025  10:33    <DIR>          .
+08/02/2025  10:33    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   517.256.196.096 bytes disponíveis
+
+projeto_inicial\css>cd ..
+
+projeto_inicial>cd js
+
+projeto_inicial\js>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\js
+
+08/02/2025  10:33    <DIR>          .
+08/02/2025  10:33    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   517.256.196.096 bytes disponíveis
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  10:33    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   517.255.684.096 bytes disponíveis
+
+3 - Na pasta "html", crie um arquivo chamado "index.html" com o seguinte texto: Bem-vindo ao Projeto Inicial. 
+Na pasta "css", crie um arquivo chamado 
+"style.css" com o texto: body { font-family: Arial, sans-serif; background-color: beige}
+
+projeto_inicial>cd html
+
+projeto_inicial\html>echo Bem-vindo ao Projeto Inicial. > index.html
+
+projeto_inicial\html>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\html
+
+08/02/2025  10:59    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  10:59                32 index.html
+               1 arquivo(s)             32 bytes
+               2 pasta(s)   517.255.139.328 bytes disponíveis
+
+projeto_inicial\html>cd ..
+
+projeto_inicial>cd css
+
+projeto_inicial\css>echo body { font-family: Arial, sans-serif; background-color: beige} > style.css
+
+projeto_inicial\css>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\css
+
+08/02/2025  11:03    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:03                66 style.css
+               1 arquivo(s)             66 bytes
+               2 pasta(s)   517.258.719.232 bytes disponíveis
+
+4 - Dentro da pasta "assets", crie duas subpastas chamadas "img" e "fonts".
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>md img
+
+projeto_inicial\assets>md fonts
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  11:04    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:04    <DIR>          fonts
+08/02/2025  11:04    <DIR>          img
+               0 arquivo(s)              0 bytes
+               4 pasta(s)   517.258.186.752 bytes disponíveis
+
+5 - Mova o arquivo "style.css" da pasta "css" para dentro da pasta "assets".
+
+projeto_inicial\css>move style.css ..\assets
+        1 arquivo(s) movido(s).
+
+6 - Liste os arquivos e subpastas dentro da pasta "assets" 
+para verificar se o arquivo "style.css" foi movido corretamente.
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  11:19    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:04    <DIR>          fonts
+08/02/2025  11:04    <DIR>          img
+08/02/2025  11:03                66 style.css
+               1 arquivo(s)             66 bytes
+               4 pasta(s)   517.249.273.856 bytes disponíveis
+
+7 - Na pasta "js", crie dois arquivos chamados "script.js" com o texto console.log("Script carregado!"); e 
+"app.js" com o texto console.log("Aplicação Iniciada!");
+
+projeto_inicial>cd js
+
+projeto_inicial\js>echo console.log("Script carregado!"); > script.js
+
+projeto_inicial\js> echo console.log("Aplicação Iniciada"); > app.js
+
+projeto_inicial\js>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\js
+
+08/02/2025  11:22    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:22                37 app.js
+08/02/2025  11:21                36 script.js
+               2 arquivo(s)             73 bytes
+               2 pasta(s)   517.248.954.368 bytes disponíveis
+
+8 - Faça uma cópia do arquivo "index.html" da pasta "html" para a pasta "assets".
+
+projeto_inicial>cd html
+
+projeto_inicial\html>copy index.html ..\assets
+        1 arquivo(s) copiado(s).
+
+projeto_inicial\html>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\html
+
+08/02/2025  10:59    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  10:59                32 index.html
+               1 arquivo(s)             32 bytes
+               2 pasta(s)   517.252.202.496 bytes disponíveis
+
+projeto_inicial\html>cd ..
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  11:24    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:04    <DIR>          fonts
+08/02/2025  11:04    <DIR>          img
+08/02/2025  10:59                32 index.html
+08/02/2025  11:03                66 style.css
+               2 arquivo(s)             98 bytes
+               4 pasta(s)   517.252.128.768 bytes disponíveis
+
+9 - Renomeie o arquivo "app.js" para "main.js" dentro da pasta "js".
+
+projeto_inicial>cd js
+
+projeto_inicial\js>rename app.js main.js
+
+projeto_inicial\js>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\js
+
+08/02/2025  11:26    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:22                37 main.js
+08/02/2025  11:21                36 script.js
+               2 arquivo(s)             73 bytes
+               2 pasta(s)   517.251.354.624 bytes disponíveis
+
+projeto_inicial\js>
+
+10 - Verifique a estrutura do projeto, listando os diretórios e arquivos de cada pasta principal 
+(html, css, js, e assets) para garantir que tudo está no lugar correto.
+
+projeto_inicial>cd html
+
+projeto_inicial\html>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\html
+
+08/02/2025  10:59    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  10:59                32 index.html
+               1 arquivo(s)             32 bytes
+               2 pasta(s)   517.250.879.488 bytes disponíveis
+
+projeto_inicial\html>cd ..
+
+projeto_inicial>cd css
+
+projeto_inicial\css>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\css
+
+08/02/2025  11:19    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   517.250.879.488 bytes disponíveis
+
+projeto_inicial\css>cd ..
+
+projeto_inicial>cd js
+
+projeto_inicial\js>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\js
+
+08/02/2025  11:26    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:22                37 main.js
+08/02/2025  11:21                36 script.js
+               2 arquivo(s)             73 bytes
+               2 pasta(s)   517.250.879.488 bytes disponíveis
+
+projeto_inicial\js>cd ..
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  11:24    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:04    <DIR>          fonts
+08/02/2025  11:04    <DIR>          img
+08/02/2025  10:59                32 index.html
+08/02/2025  11:03                66 style.css
+               2 arquivo(s)             98 bytes
+               4 pasta(s)   517.250.732.032 bytes disponíveis
+
+11 - Navegue até a pasta "assets" e delete o arquivo "index.html".
+
+projeto_inicial>cd assets
+
+projeto_inicial\assets>del index.html
+
+projeto_inicial\assets>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é D6FD-7AAF
+
+ Pasta de projeto_inicial\assets
+
+08/02/2025  11:30    <DIR>          .
+08/02/2025  10:40    <DIR>          ..
+08/02/2025  11:04    <DIR>          fonts
+08/02/2025  11:04    <DIR>          img
+08/02/2025  11:03                66 style.css
+               1 arquivo(s)             66 bytes
+               4 pasta(s)   517.250.207.744 bytes disponíveis
+
+12 - Navegue até a pasta "html" e abra o arquivo "index.html" no notepad (bloco de notas).
+
+projeto_inicial>cd html
+
+projeto_inicial\html>notepad index.html
