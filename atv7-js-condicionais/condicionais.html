@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    
+    <script>
+        //exercício 1
+        //número maior que 10
+        var numero = 10;
+        if (numero > 10){
+            console.log("Maior que 10");
+        } else{
+            console.log("Menor ou igual a 10");
+        }
+
+        //exercício 2
+        //saber se o número é par/impar
+        var numero = 4;
+        if (numero%2 === 0){
+            console.log("Par");
+        } else{
+            console.log("Impar");
+        }
+
+        //exercício 3
+        //Maior e mneor número
+        var numero1 = 10;
+        var numero2 = 20;
+        var numero3 = 30;
+
+        maior = numero1
+        menor = numero1
+
+        if(numero2 > maior){
+            maior = numero2;
+        }
+        if(numero3 > maior){
+            maior = numero3;
+        }
+        if(numero2 < menor){
+            menor = numero2;
+        }
+        if(numero3 < menor){
+            menor = numero3;
+        }
+        console.log("Maior:",maior, "\nMenor:",menor)
+
+        //exercício 4
+        //calculadora simples => use switch
+        var operacao = "+";
+        var numero1 = 10;
+        var numero2 = 2;
+
+        switch (operacao){
+            case"+":
+                console.log("Resultado:",numero1+numero2)
+                break;
+            case"-":
+                console.log("Resultado:",numero1-numero2)
+                break;
+            case"/":
+                console.log("Resultado:",numero1/numero2)
+                break;
+            case"*":
+                console.log("Resultado:",numero1*numero2)
+                break;
+            default:
+                console.log("Operação Inválida!")
+        }
+    </script>
+
+</body>
+</html>
