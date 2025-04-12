@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+</head>
+<body>
+    
+    <script>
+        //contador 1 até 10
+        for(var a = 1; a < 11; a++){
+                console.log(a);
+            }
+        //contagem regressiva de 10 até 0 
+        for(var b = 10; b > -1; b--){
+                console.log(b);
+            }
+        //tabuada do 7
+        i = 0
+        for(var c = 0; c < 11; c++){
+            //console.log("7 x " + c +" = " + (7*c))
+            console.log(`7 x ${c} = ${7*c}`)
+        }
+        // Mostrar os números pares de 0 até 50, exceto 10 e 20
+        for (var d = 0; d < 51; d+=2){
+            if (d == 10 || d == 20){
+                continue;
+            }
+            console.log(d)
+        }
+    </script>
+
+</body>
+</html>
