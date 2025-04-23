@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeticoes</title>
+</head>
+<body>
+    <script>
+        // 1. Lista de compras
+        // Crie um array com 5 itens e use um loop for para exibir cada um deles.
+
+        var frutas = ["Banana","Maçã","Laranja","Uva","Morango"]
+            for (var a = 0; a < frutas.length; a++){
+                console.log(frutas[a])
+            }
+        
+        // 2. Números ímpares entre 1 e 20
+        // Exiba todos os números ímpares entre 1 e 20 usando um loop for.
+
+        for(var a = 1; a < 21; a+=2){
+                console.log(a);
+            }
+        
+        // 3. Soma dos elementos de um array
+        // Crie um array com 5 números e exiba a soma de todos os elementos usando um loop for.
+
+        var num = [10,50,20,5,15]
+        var soma = 0;
+            for (var a = 0; a < num.length; a++){
+                soma += num[a]             
+            }
+            console.log("Total:",soma)
+
+        // 4. Verificação de número primo
+        // Peça ao usuário um número e determine se ele é primo usando um loop for.
+
+        var num = prompt("Digite um número")
+        var primo = true
+
+        if (num <= 1) {
+        primo = false;
+        }else{
+            for (var a = 2; a < num; a++){
+            if (num % a == 0){
+                primo = false;
+                break;
+                }
+            }
+        }
+        if (primo) {
+            console.log("É primo:",num);
+        }else{
+        console.log("Não é primo:",num);
+        }
+
+        // 5. Contagem de vogais em uma string
+        // Peça ao usuário uma palavra e conte quantas vogais ela tem usando um loop for.
+
+        var plvr = prompt("Digite uma palavra")
+        var vogais = "aeiou"
+        var vogaistotal = 0;
+
+        for (var a = 0; a < plvr.length; a++) {
+        if (vogais.includes(plvr[a])) {
+            vogaistotal++;
+            }
+        }
+
+        console.log("Total de vogais:", vogaistotal);
+        
+    </script>
+</body>
+</html>
