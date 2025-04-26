@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+    //função para verificar se um número é par ou impar
+
+        function ParImpar(num){
+            if (num % 2 == 0){
+                console.log(`O número ${num} é Par`)
+            }else{
+                console.log(`O número ${num} é Impar`)
+            }
+        }
+        ParImpar(1)
+        ParImpar(2)
+
+            // function ParImpar(num){
+            //     if (num % 2 == 0){
+            //         return "É par"
+            //     }else{
+            //         return "É impar"
+            //     }
+            // }
+            // console.log("Resultado:",ParImpar(1))
+
+    //gerar tabuada, lista array [10, 5, 3, 8, 2]
+        
+            //     function tabuada(num){
+            // for(var i = 0; i < 11; i++){
+            //     console.log(`${num[0]} x ${i} = ${num[0]*i}`)
+            //     }   
+            // }
+            //     tabuada([10, 5, 3, 8, 2])
+
+        function tabuada(num){
+        for(var i = 0; i < num.length; i++){
+            console.log(`Tabuada do ${num[i]}`);
+            for(var a = 0; a <= 10; a++){
+                console.log(`${num[i]} x ${a} = ${num[i]*a}`)
+                }   
+            }
+         }          
+         tabuada([10, 5, 3, 8, 2])
+
+    //IMC, receber peso e altura e calcular imc 
+    //virificar se a pessoas esta abaixo do peso, peso normal, sobrepeso ou obesidade.
+    //abaixo 18.5 => abaixo do peso
+    //entre 18.5 e 24.9 => peso normal
+    //igual ou acima de 25 e abaixo de 29.9 sobrepeso
+    //acima de 29.9 => obesidade
+
+        function IMC(peso, altura){
+        var imc = peso / (altura**2)
+            if(imc < 18.5){
+            console.log("Você esta no abaixo do peso",imc)
+            //else if(imc >= 18.5 && imc < 25)
+            }else if(imc >= 18.5 && imc <= 24.9){
+                console.log("Você esta no peso normal",imc)
+            }else if(imc >= 25 && imc < 29.9){
+                console.log("Você esta no sobrepeso",imc)
+            }else{
+                console.log("Você esta na obesidade",imc)
+            }
+        }
+        IMC(60, 1.90)
+        IMC(70, 1.73)
+        IMC(80, 1.70)
+        IMC(90, 1.60)
+
+    //Verificar se é bissexto ou não!
+
+        function bissexto(ano){
+        if((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0){
+            console.log(`O ano ${ano} é bissexto!`)
+        }else{
+            console.log(`O ano ${ano} não é bissexto!`)
+            }
+        }
+    bissexto(2023)
+    bissexto(2024)
+    bissexto(2025)
+    </script>
+</body>
+</html>
