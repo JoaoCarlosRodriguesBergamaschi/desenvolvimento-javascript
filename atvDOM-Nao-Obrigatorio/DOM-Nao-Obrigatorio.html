@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- 1. Alterar texto de um parágrafo
+    Crie uma função chamada mudarTexto() que altere o texto do parágrafo para: "Você clicou no botão!" -->
+    <h1 id="titulo">Olá!</h1>
+    <button onclick="mudarTexto()">Alterar Texto</button>
+
+    <!-- 2. Mudar a cor de fundo
+    Crie uma função mudarCor() que mude a cor de fundo da página para azul claro (lightblue) ao clicar no botão. -->
+    <h1>Alterar cor de fundo</h1>
+    <button onclick="mudarCor('lightblue')">Azul Claro</button>
+
+    <!-- 3. Mostrar ou esconder um elemento
+Crie a função mostraOcultaTexto() que oculte o parágrafo se ele estiver visível, e o mostre se estiver oculto.
+Dica: use a propriedade style.display. -->
+    <p></p><h1 id="moe">Mostrar ou Esconder</h1></body</p>
+    <button onclick="mostraOcultaTexto()">Mostrar/Esconder</button>
+    <!-- 4. Crie uma nova função com um nome criativo e funcionalidade à sua escolha.
+Use sua criatividade! Pesquise e tente algo novo usando JavaScript e DOM. -->
+    <h1>Calculadora</h1>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2"><br>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <button onclick="limpar()">Limpar</button>
+    <div id="resultado"></div>
+
+    <script>
+
+        function mudarTexto(){
+            document.getElementById("titulo").textContent = "Você clicou no botão!";
+        }
+
+        function mudarCor(cor){
+            document.body.style.backgroundColor = cor;
+        }
+
+        function  mostraOcultaTexto(){
+            const paragrafo = document.getElementById("moe");
+
+            if (paragrafo.style.display === "none") {
+                paragrafo.style.display = "block"; // mostra
+            } else {
+                paragrafo.style.display = "none"; // oculta
+            }
+        }
+        function calcular(operador){
+            const n1 = parseFloat(document.getElementById('num1').value);
+            const n2 = parseFloat(document.getElementById('num2').value);
+            const resultado = document.getElementById('resultado');
+
+            if (isNaN(n1) || isNaN(n2)){
+                resultado.textContent = 'Por favor, preencha ambos os números.';
+                return;
+            }
+
+            let res;
+
+            switch (operador){
+                case '+': res = n1 + n2; break;
+                case '-': res = n1 - n2; break;
+                case '*': res = n1 * n2; break;
+                case '/':
+                res = n2 === 0 ? 'Erro: divisão por zero' : n1 / n2;
+                break;
+                }
+                resultado.textContent = `Resultado: ${res}`;
+                }
+
+                function limpar() {
+                document.getElementById('num1').value = '';
+                document.getElementById('num2').value = '';
+                document.getElementById('resultado').textContent = '';
+                }
+    </script>
+</body>
+</html>
